@@ -1,6 +1,6 @@
 import tw from 'tailwind-styled-components';
 
-export const SectionHero = tw.div`
+export const HeroSection = tw.section`
 dark
 mx-auto 
 grid 

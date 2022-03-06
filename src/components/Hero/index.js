@@ -10,7 +10,7 @@ import {
 } from 'react-icons/fa';
 // Tailwind Styled Components
 import {
-  SectionHero,
+  HeroSection,
   HeroContainer,
   HeroSidebar,
   HeroContent,
@@ -23,7 +23,7 @@ import {
 } from '../../styles/Hero';
 function Hero() {
   return (
-    <SectionHero>
+    <HeroSection id='home'>
       <HeroContainer>
         <HeroSidebar>
           <Ul>
@@ -62,7 +62,7 @@ function Hero() {
           </Container>
         </HeroContent>
       </HeroContainer>
-    </SectionHero>
+    </HeroSection>
   );
 }
 
