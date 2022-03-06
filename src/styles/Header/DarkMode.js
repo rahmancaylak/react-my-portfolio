@@ -1,5 +1,4 @@
 import tw from 'tailwind-styled-components';
-import { MdDarkMode } from 'react-icons/md';
 
 export const Label = tw.label`
 items-center

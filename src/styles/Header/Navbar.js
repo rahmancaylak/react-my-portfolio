@@ -13,7 +13,7 @@ sm:hidden
 export const Li = tw.li`
 sm:block 
 md:inline
-ml-2
+ml-4
 `;
 
 export const A = tw.a`

@@ -1,5 +1,6 @@
 module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
+  darkMode: 'class',
   theme: {
     screens: {
       sm: [{ min: '100px', max: '805px' }],
@@ -13,7 +14,13 @@ module.exports = {
       lg: '1100px',
       xl: '1400px',
     },
-    extend: {},
+    extend: {
+      colors: {
+        customPrimary: '#1d1e24',
+        customSecondary: '#23262b',
+        customBorderColor: '#33363D',
+      },
+    },
   },
   plugins: [],
 };

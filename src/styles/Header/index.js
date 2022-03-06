@@ -5,12 +5,12 @@ flex
 lg:flex-row 
 md:justify-between 
 border-b 
-border-white 
+border-customBorderColor
 sm:flex-col 
 h-full 
 px-4 
 items-center 
 text-white 
-bg-gray-900 
+bg-customPrimary
 p-3
 `;
