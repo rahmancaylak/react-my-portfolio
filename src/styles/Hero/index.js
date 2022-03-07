@@ -41,6 +41,11 @@ my-16
 `;
 
 export const Img = tw.img`
+hover:bg-gradient-to-r
+hover:from-indigo-500 
+hover:to-pink-500
+ease-in duration-300
+hover:p-1
 rounded-full
 md:h-64
 md:w-64
