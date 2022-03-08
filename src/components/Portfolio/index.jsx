@@ -27,8 +27,6 @@ function Portfolio() {
     filterData === 'All' ? data : data.category === filterData
   );
 
-  console.log(filterData);
-
   return (
     <PortfolioSection id='projects'>
       <PortfolioContainer>
