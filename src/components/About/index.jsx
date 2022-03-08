@@ -12,7 +12,6 @@ import {
   CardSection,
 } from '../../styles/About';
 function About() {
-  console.log(AboutCardData);
   return (
     <AboutSection id='about'>
       <AboutContainer>
