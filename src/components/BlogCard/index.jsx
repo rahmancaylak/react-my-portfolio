@@ -27,7 +27,6 @@ const BlogCard = ({
   authorImg,
   authorTitle,
 }) => {
-  console.log(thumbnail);
   return (
     <CardContainer>
       <Card>

@@ -3,6 +3,7 @@ import tw from 'tailwind-styled-components';
 export const BlogSection = tw.section`
 bg-customSecondary
 h-full
+pb-10
 `;
 
 export const BlogContainer = tw.div`
