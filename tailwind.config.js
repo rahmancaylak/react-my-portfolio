@@ -19,6 +19,7 @@ module.exports = {
         customPrimary: '#1d1e24',
         customSecondary: '#23262b',
         customBorderColor: '#33363D',
+        customInputColor: '#2E2F36',
       },
     },
   },
