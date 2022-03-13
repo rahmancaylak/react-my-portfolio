@@ -1,18 +1,10 @@
 import tw from 'tailwind-styled-components';
 
 export const HeroSection = tw.section`
-dark
-mx-auto 
-grid 
-h-screen 
+flex
+flex-row
 text-white 
 bg-customPrimary
-`;
-
-export const HeroContainer = tw.div`
-grid 
-grid-cols-3 
-gap-4
 `;
 
 export const HeroSidebar = tw.div`
@@ -22,22 +14,20 @@ mt-10
 `;
 
 export const Ul = tw.ul`
+social-media-sidebar
 `;
 
 export const Li = tw.li`
+text-2xl
 py-5
 `;
 
 export const HeroContent = tw.div`
-justify-center
-flex 
-`;
-
-export const Container = tw.div`
 flex
 flex-col
 items-center
 my-16
+w-full
 `;
 
 export const Img = tw.img`
