@@ -26,7 +26,6 @@ export const HeroContent = tw.div`
 flex
 flex-col
 items-center
-my-16
 w-full
 `;
 
@@ -41,19 +40,29 @@ md:h-64
 md:w-64
 sm:h-40
 sm:w-40
+mt-10
 `;
 
-export const H1 = tw.h1`
+export const Title = tw.h1`
 text-center
-text-4xl
-uppercase
+text-2xl
 font-medium
 mt-5
 `;
 
+export const SubText = tw.h2`
+mt-4
+text-neutral-600
+text-center
+font-medium
+text-lg
+lg:mx-60
+md:mx-28
+sm:mx-2
+`;
+
 export const AboutArrow = tw.a`
-mb-auto
-mt-16
+my-6
 animate-bounce 
 p-2 
 w-10 

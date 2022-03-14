@@ -11,7 +11,8 @@ import {
   Ul,
   Li,
   Img,
-  H1,
+  Title,
+  SubText,
   AboutArrow,
 } from '../../styles/Hero';
 function Hero() {
@@ -30,11 +31,25 @@ function Hero() {
       </HeroSidebar>
       <HeroContent>
         <Img src={`${ProfileData.image}`} alt={ProfileData.imageAlt}></Img>
-        <H1>{`${ProfileData.name} ${ProfileData.surname}`}</H1>
-        <h2 className='mt-2 text-neutral-600 font-medium text-lg'>
-          Jr. Frontend Developer
-        </h2>
-        <AboutArrow href='#about'>
+        <Title>
+          Merhaba, ben {`${ProfileData.name} ${ProfileData.surname}`}.
+        </Title>
+        <SubText>
+          HTML, CSS, JavaScript ve React gibi Front-End teknolojilerini
+          öğrenmekteyim. Yaptığım projeleri{' '}
+          <a href='#projects' className='text-white hover:underline'>
+            Projelerim
+          </a>{' '}
+          başlığından inceleyebilir ya da{' '}
+          <a
+            href='https://github.com/rahmancaylak'
+            className='text-white hover:underline'
+          >
+            GitHub
+          </a>{' '}
+          hesabımdan direkt kodlara erişebilirsiniz.
+        </SubText>
+        <AboutArrow href='#projects'>
           <FaAngleDown className='w-8 h-8' />
         </AboutArrow>
       </HeroContent>
