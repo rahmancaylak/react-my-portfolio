@@ -21,6 +21,11 @@ font-medium
 `;
 
 export const FilterGroup = tw.div`
+flex
+justify-center
+sm:flex
+sm:flex-col
+sm:w-4/6
 mt-10
 mb-10
 `;
