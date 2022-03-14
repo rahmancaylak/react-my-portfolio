@@ -11,9 +11,6 @@ const Navbar = () => {
             <A href='#home'>Ana Sayfa</A>
           </Li>
           <Li>
-            <A href='#about'>Hakkımda</A>
-          </Li>
-          <Li>
             <A href='#projects'>Projelerim</A>
           </Li>
           <Li>

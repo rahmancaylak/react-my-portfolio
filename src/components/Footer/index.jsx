@@ -50,9 +50,6 @@ function Footer() {
               <a href='#home'>Ana Sayfa</a>
             </MenuLink>
             <MenuLink>
-              <a href='#about'>Hakkımda</a>
-            </MenuLink>
-            <MenuLink>
               <a href='#projects'>Projelerim</a>
             </MenuLink>
             <MenuLink>
