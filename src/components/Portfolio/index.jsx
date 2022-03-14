@@ -9,13 +9,12 @@ import PortfolioItem from '../PortfolioItem';
 import {
   PortfolioSection,
   PortfolioContainer,
-  PortfolioTitle,
-  PortfolioText,
+  Title,
   FilterGroup,
-  FilterButton,
   ItemsContainer,
 } from '../../styles/Portfolio';
-
+// Tailwind Styled Components
+import { Button } from '../../styles/Button';
 function Portfolio() {
   const [filterData, setFilterData] = useState('All');
   const category = [
@@ -27,16 +26,23 @@ function Portfolio() {
     filterData === 'All' ? data : data.category === filterData
   );
 
+  const updateClass = (item) => {
+    setFilterData(item);
+  };
+
   return (
     <PortfolioSection id='projects'>
       <PortfolioContainer>
-        <PortfolioTitle>Çalışmalarım</PortfolioTitle>
-        <PortfolioText>Lorem ipsum dolor sit amet</PortfolioText>
+        <Title>Çalışmalarım</Title>
         <FilterGroup>
           {category.map((item, index) => (
-            <FilterButton key={index} onClick={() => setFilterData(item)}>
+            <Button
+              key={index}
+              onClick={() => updateClass(item)}
+              $isActive={filterData === item}
+            >
               {item}
-            </FilterButton>
+            </Button>
           ))}
         </FilterGroup>
         <motion.div layout>
