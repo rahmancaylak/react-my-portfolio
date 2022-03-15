@@ -22,11 +22,7 @@ export default function Modal({ setShowModal, ...rest }) {
         </Close>
         <Content>
           <Left>
-            <img
-              src='https://github.com/rahmancaylak/React-Projects/raw/master/tours/tours-output.gif?raw=true'
-              alt='test'
-              style={{ height: '100%' }}
-            />
+            <img src={rest.output} alt='test' style={{ height: '100%' }} />
           </Left>
           <Right>
             <Title>
@@ -36,6 +32,7 @@ export default function Modal({ setShowModal, ...rest }) {
               </a>
               )
             </Title>
+            <Title>Which Technology Used</Title>
             <Ul>
               {rest.usedTechnology.map((item) => (
                 <Li key={item.id}>

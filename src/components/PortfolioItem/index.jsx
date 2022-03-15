@@ -22,7 +22,7 @@ function PortfolioItems({ ...data }) {
       >
         <Container
           style={{
-            backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(${data.imgUrl})`,
+            backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(${data.thumbnail})`,
             backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat',
             objectFit: 'cover',
@@ -32,7 +32,6 @@ function PortfolioItems({ ...data }) {
             <Title>
               {data.title} - {data.category}
             </Title>
-            <Title>React</Title>
             <Description>
               <a href={data.url}>
                 <Button className='p-0 m-0 hover:scale-125'>
