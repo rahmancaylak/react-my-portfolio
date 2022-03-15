@@ -1,7 +1,7 @@
 import tw from 'tailwind-styled-components';
 
 export const BlogSection = tw.section`
-bg-customSecondary
+bg-customPrimary
 h-full
 pb-10
 `;

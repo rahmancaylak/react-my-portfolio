@@ -1,3 +1,5 @@
+import ProfilePhoto from '../assets/Img/rahmancaylak.webp';
+
 export const BlogData = [
   {
     id: 1,
@@ -9,7 +11,8 @@ export const BlogData = [
     category: ['Business', 'Travel'],
     date: 'July 2, 2020',
     authorName: 'Rahman Çaylak',
-    authorImg: 'https://rahmancaylak.github.io/assets/img/rahmancaylak.jpg',
+
+    authorImg: `${ProfilePhoto}`,
     authorTitle: 'Jr. Frontend Developer',
   },
   {
@@ -23,7 +26,7 @@ export const BlogData = [
     category: ['Business', 'Travel'],
     date: 'July 2, 2021',
     authorName: 'Rahman Çaylak',
-    authorImg: 'https://rahmancaylak.github.io/assets/img/rahmancaylak.jpg',
+    authorImg: `${ProfilePhoto}`,
     authorTitle: 'Jr. Frontend Developer',
   },
   {
@@ -36,7 +39,7 @@ export const BlogData = [
     category: ['Business', 'Travel'],
     date: 'July 2, 2022',
     authorName: 'Rahman Çaylak',
-    authorImg: 'https://rahmancaylak.github.io/assets/img/rahmancaylak.jpg',
+    authorImg: `${ProfilePhoto}`,
     authorTitle: 'Jr. Frontend Developer',
   },
 ];
