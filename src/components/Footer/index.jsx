@@ -63,7 +63,9 @@ function Footer() {
         <CopyrightContainer>
           <Text>
             2022 designed by Rahman Çaylak -{' '}
-            <GithubRepo href='#'>GitHub Repo</GithubRepo>
+            <GithubRepo href='https://github.com/rahmancaylak/react-my-portfolio'>
+              GitHub Repo
+            </GithubRepo>
           </Text>
         </CopyrightContainer>
       </FooterContainer>

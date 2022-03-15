@@ -1,4 +1,6 @@
 import React from 'react';
+//Component
+import { Button } from '../../styles/Button';
 // FontAwesome Icon
 import { FaAngleDoubleRight } from 'react-icons/fa';
 
@@ -23,9 +25,15 @@ function Blog() {
             <BlogCard key={blog.id} {...blog} />
           ))}
         </CardSection>
-        <button className='text-neutral-500 hover:text-white rounded-full p-1 hover:bg-neutral-500 w-2/4 bg-transparent	border border-customBorderColor ease-in-out duration-500'>
-          Read More <FaAngleDoubleRight style={{ display: 'inline-block' }} />
-        </button>
+        <a
+          href='#0'
+          className='rounded-full pt-5 w-full bg-transparent ease-in-out duration-500 flex justify-center'
+        >
+          <Button className='w-2/4rounded-full p-1 hover:bg-neutral-500 w-2/4 ease-in-out duration-500'>
+            Daha Fazla{' '}
+            <FaAngleDoubleRight style={{ display: 'inline-block' }} />
+          </Button>
+        </a>
       </BlogContainer>
     </BlogSection>
   );

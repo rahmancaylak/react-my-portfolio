@@ -2,7 +2,7 @@ import tw from 'tailwind-styled-components';
 
 export const ContactSection = tw.section`
 pt-2
-bg-customPrimary
+bg-customSecondary
 h-full
 `;
 
@@ -60,8 +60,8 @@ disabled:bg-slate-50
 disabled:text-slate-500 
 disabled:border-slate-200 
 focus:outline-none 
-focus:border-sky-500 
-focus:ring-sky-500 
+focus:border-purple-800 
+focus:ring-purple-800 
 block 
 w-full	
 rounded-full
@@ -72,6 +72,8 @@ invalid:text-pink-600
 focus:invalid:border-pink-500 
 focus:invalid:ring-pink-500 
 disabled:shadow-none
+transition
+duration-500
 `;
 
 export const TextArea = tw.textarea`
@@ -82,13 +84,13 @@ bg-customInputColor
 shadow-sm 
 text-white
 border-slate-300 
-placeholder-slate-400  
+placeholder-neutral-500  
 disabled:bg-slate-50 
 disabled:text-slate-500 
 disabled:border-slate-200 
 focus:outline-none 
-focus:border-sky-500 
-focus:ring-sky-500 
+focus:border-purple-800 
+focus:ring-purple-800 
 block 
 w-full	
 sm:text-sm 
@@ -96,8 +98,10 @@ focus:ring-1
 invalid:border-pink-500 
 invalid:text-pink-600 
 focus:invalid:border-pink-500 
-focus:invalid:ring-pink-500 
+focus:invalid:ring-pink-500
 disabled:shadow-none
+transition
+duration-500
 `;
 
 export const ButtonGroup = tw.div`

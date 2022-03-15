@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+//Component
+import { Button } from '../../styles/Button';
 // FontAwesome Icons
 import { FaPaperPlane } from 'react-icons/fa';
 // Tailwind Styled Components
@@ -13,7 +15,6 @@ import {
   Input,
   TextArea,
   ButtonGroup,
-  Button,
 } from '../../styles/Contact';
 function Contact() {
   const [name, setName] = useState('');
@@ -34,7 +35,7 @@ function Contact() {
                 id='name'
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                placeholder='name'
+                placeholder='Rahman'
               />
             </InputGroup>
             <InputGroup>
@@ -44,7 +45,7 @@ function Contact() {
                 id='surname'
                 value={surname}
                 onChange={(e) => setSurname(e.target.value)}
-                placeholder='your surname'
+                placeholder='Çaylak'
               />
             </InputGroup>
             <InputGroup>
@@ -55,7 +56,7 @@ function Contact() {
                 id='email'
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                placeholder='you@example.com'
+                placeholder='rahmancaylakk@gmail.com'
               />
             </InputGroup>
             <InputGroup>
@@ -66,7 +67,7 @@ function Contact() {
                 id='topic'
                 value={topic}
                 onChange={(e) => setTopic(e.target.value)}
-                placeholder='Topic'
+                placeholder='Konu...'
               />
             </InputGroup>
             <InputGroup className='col-span-2'>
@@ -76,12 +77,15 @@ function Contact() {
                 id='message'
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
-                placeholder='Your message...'
+                placeholder='Gönder butonu çalışmamaktadır.'
               />
             </InputGroup>
           </FormGroup>
           <ButtonGroup>
-            <Button>
+            <Button
+              className='flex items-center hover:opacity-80'
+              $isActive={true}
+            >
               Send <FaPaperPlane className='ml-1 inline' />
             </Button>
           </ButtonGroup>

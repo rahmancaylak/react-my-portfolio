@@ -2,7 +2,7 @@ import tw from 'tailwind-styled-components';
 
 export const FooterSection = tw.section`
 pt-2
-bg-customSecondary
+bg-customPrimary
 h-full
 pb-10
 `;
@@ -71,6 +71,7 @@ export const CopyrightContainer = tw.div`
 flex
 text-neutral-500
 mt-2
+sm:text-sm
 `;
 
 export const Text = tw.p`
