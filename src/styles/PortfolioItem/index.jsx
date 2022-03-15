@@ -33,12 +33,11 @@ w-10/12
 text-center
 text-white
 font-medium
+mb-5
 `;
 
 export const Description = tw.p`
-font-medium
-break-words
-w-10/12
-text-center
-text-white
+flex
+justiy-center
+items-center
 `;

@@ -4,20 +4,36 @@ import portfolio3 from '../assets/Img/portfolio-3.webp';
 import portfolio4 from '../assets/Img/portfolio-4.webp';
 import portfolio5 from '../assets/Img/portfolio-5.webp';
 import portfolio6 from '../assets/Img/portfolio-6.webp';
+// FontAwesome
+import { FaLink, FaExpandAlt } from 'react-icons/fa';
 
 export const PortfolioData = [
   {
     id: 1,
-    title: 'Title1',
-    description: 'Description1',
+    title: 'Tours',
+    url: 'https://rahmancaylak-tours.netlify.app/',
+    urlIcon: <FaLink />,
+    iconDetail: <FaExpandAlt />,
     category: 'React',
+    usedTechnology: [
+      { id: 1, name: 'React v17.0.2 (useState, useEffect)', link: '' },
+      { id: 2, name: 'Axios', link: 'https://www.npmjs.com/package/axios' },
+      {
+        id: 3,
+        name: 'API Link',
+        link: 'https://course-api.com/react-tours-project',
+      },
+      { id: 4, name: 'Chakra UI', link: 'https://chakra-ui.com/' },
+    ],
+    repoUrl: 'https://github.com/rahmancaylak/React-Projects/tree/master/tours',
     imgUrl: `${portfolio1}`,
   },
   {
     id: 2,
-    title: 'Title2',
+    title: 'Tabs',
+    url: '',
     description: 'Description2',
-    category: 'JavaScript',
+    category: 'React',
     imgUrl: `${portfolio2}`,
   },
   {

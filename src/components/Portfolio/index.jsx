@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-// About Data
+// Portfolio Data
 import { PortfolioData } from '../../data/Portfolio';
 //Component
 import PortfolioItem from '../PortfolioItem';
@@ -13,8 +13,10 @@ import {
   FilterGroup,
   ItemsContainer,
 } from '../../styles/Portfolio';
-// Tailwind Styled Components
+
+// Tailwind Button Styled Components
 import { Button } from '../../styles/Button';
+
 function Portfolio() {
   const [filterData, setFilterData] = useState('All');
   const category = [
