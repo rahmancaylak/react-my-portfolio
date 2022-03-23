@@ -1,9 +1,9 @@
-import portfolio1 from '../assets/Img/portfolio-1.webp';
-import portfolio2 from '../assets/Img/portfolio-2.webp';
-import portfolio3 from '../assets/Img/portfolio-3.webp';
-import portfolio4 from '../assets/Img/portfolio-4.webp';
-import portfolio5 from '../assets/Img/portfolio-5.webp';
-import portfolio6 from '../assets/Img/portfolio-6.webp';
+import tours_thumbnail from '../assets/Img/tours-portfolio-thumbnail.webp';
+import tabs_thumbnail from '../assets/Img/tabs-portfolio-thumbnail.webp';
+import baconIpsum_thumbnail from '../assets/Img/bacon-ipsum-portfolio-thumbnail.webp';
+import groceryBud_thumbnail from '../assets/Img/grocery-bud-portfolio-thumbnail.webp';
+import accordion_thumbnail from '../assets/Img/accordion-portfolio-thumbnail.webp';
+import foodMenu_thumbnail from '../assets/Img/food-menu-portfolio-thumbnail.webp';
 // FontAwesome
 import { FaLink, FaExpandAlt } from 'react-icons/fa';
 
@@ -28,7 +28,7 @@ export const PortfolioData = [
     repoUrl: 'https://github.com/rahmancaylak/React-Projects/tree/master/tours',
     output:
       'https://github.com/rahmancaylak/React-Projects/raw/master/tours/tours-output.gif?raw=true',
-    thumbnail: `${portfolio1}`,
+    thumbnail: `${tours_thumbnail}`,
   },
   {
     id: 2,
@@ -49,7 +49,7 @@ export const PortfolioData = [
     repoUrl: 'https://github.com/rahmancaylak/React-Projects/tree/master/tabs',
     output:
       'https://github.com/rahmancaylak/React-Projects/raw/master/tabs/tabs-output.gif?raw=true',
-    thumbnail: `${portfolio2}`,
+    thumbnail: `${tabs_thumbnail}`,
   },
   {
     id: 3,
@@ -71,7 +71,7 @@ export const PortfolioData = [
       'https://github.com/rahmancaylak/React-Projects/tree/master/bacon-ipsum',
     output:
       'https://github.com/rahmancaylak/React-Projects/raw/master/bacon-ipsum/bacon-ipsum-output.gif?raw=true',
-    thumbnail: `${portfolio3}`,
+    thumbnail: `${baconIpsum_thumbnail}`,
   },
   {
     id: 4,
@@ -92,7 +92,7 @@ export const PortfolioData = [
       'https://github.com/rahmancaylak/React-Projects/tree/master/grocery-bud',
     output:
       'https://github.com/rahmancaylak/React-Projects/raw/master/grocery-bud/grocery-bud-output.gif?raw=true',
-    thumbnail: `${portfolio4}`,
+    thumbnail: `${groceryBud_thumbnail}`,
   },
   {
     id: 5,
@@ -113,7 +113,7 @@ export const PortfolioData = [
       'https://github.com/rahmancaylak/React-Projects/tree/master/accordion',
     output:
       'https://github.com/rahmancaylak/React-Projects/raw/master/accordion/accordion-output.gif?raw=true',
-    thumbnail: `${portfolio5}`,
+    thumbnail: `${accordion_thumbnail}`,
   },
   {
     id: 6,
@@ -134,6 +134,6 @@ export const PortfolioData = [
       'https://github.com/rahmancaylak/React-Projects/tree/master/food-menu',
     output:
       'https://github.com/rahmancaylak/React-Projects/raw/master/food-menu/food-menu-output.gif?raw=true',
-    thumbnail: `${portfolio6}`,
+    thumbnail: `${foodMenu_thumbnail}`,
   },
 ];
