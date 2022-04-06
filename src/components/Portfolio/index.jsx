@@ -7,8 +7,8 @@ import PortfolioItem from '../PortfolioItem';
 
 // Tailwind Styled Components
 import {
-  PortfolioSection,
-  PortfolioContainer,
+  Section,
+  Container,
   Title,
   FilterGroup,
   ItemsContainer,
@@ -17,7 +17,7 @@ import {
 // Tailwind Button Styled Components
 import { Button } from '../../styles/Button';
 
-function Portfolio() {
+export default function Portfolio() {
   const [filterData, setFilterData] = useState('All');
   const category = [
     'All',
@@ -33,8 +33,8 @@ function Portfolio() {
   };
 
   return (
-    <PortfolioSection id='projects'>
-      <PortfolioContainer>
+    <Section id='projects'>
+      <Container>
         <Title>Çalışmalarım</Title>
         <FilterGroup>
           {category.map((item, index) => (
@@ -54,9 +54,7 @@ function Portfolio() {
             ))}
           </ItemsContainer>
         </motion.div>
-      </PortfolioContainer>
-    </PortfolioSection>
+      </Container>
+    </Section>
   );
 }
-
-export default Portfolio;

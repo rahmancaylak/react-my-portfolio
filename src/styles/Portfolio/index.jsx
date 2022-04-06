@@ -1,11 +1,13 @@
 import tw from 'tailwind-styled-components';
 
-export const PortfolioSection = tw.section`
-bg-customSecondary
+export const Section = tw.section`
+bg-rcLightSecondary
+dark:bg-rcSecondary
 h-full
+pb-20
 `;
 
-export const PortfolioContainer = tw.div`
+export const Container = tw.div`
 flex
 justify-center
 flex-col
@@ -15,26 +17,25 @@ items-center
 export const Title = tw.h2`
 mt-10
 text-3xl
-text-white
+text-gray-600
+dark:text-white
 uppercase
-font-medium
+font-semibold
 `;
 
 export const FilterGroup = tw.div`
 flex
+flex-col
 justify-center
-sm:flex
-sm:flex-col
-sm:w-4/6
-mt-10
-mb-10
+w-4/6
+my-10
+md:flex-row
 `;
 
 export const ItemsContainer = tw.div`
-grid
-lg:grid-cols-3
 gap-4
-mb-20
-sm:grid-cols-1
+grid
+grid-cols-1
 md:grid-cols-2
+lg:grid-cols-3
 `;

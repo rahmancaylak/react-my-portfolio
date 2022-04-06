@@ -1,21 +1,32 @@
 import tw from 'tailwind-styled-components';
 
-export const ModalContainer = tw.div`
+export const Section = tw.div`
+bg-gray-700
+bg-opacity-90
+h-full
+w-full
 fixed
+top-0
+left-0
+z-50
+flex
+justify-center
+items-center
+mx-auto
+my-auto
+`;
+
+export const Container = tw.div`
+h-fit
+relative
 text-white
 bg-neutral-800
 shadow-md
 rounded-2xl
-w-3/4 h-fit
-top-0
-bottom-0
-my-auto
-mx-auto
-right-0
-left-0
-z-40
-sm:flex-col
-sm:w-full
+flex-col
+lg:flex-row
+lg:w-10/12
+w-full
 `;
 
 export const Close = tw.button`
@@ -34,21 +45,22 @@ duration-500
 export const Content = tw.div`
 flex
 justify-center
-sm:flex-col
+flex-col
+md:flex-row
 `;
 
 export const Left = tw.div`
 mr-5
-w-4/6
-sm:w-full
+md:w-4/6
+w-full
 mt-0
 `;
 
 export const Right = tw.div`
-w-2/6
-sm:w-full
-sm:mx-4
-sm:mb-4
+md:w-2/6
+w-full
+mx-4
+mb-4
 flex
 item-center
 flex-col
@@ -61,14 +73,14 @@ text-purple-500
 text-center
 mb-2
 text-lg
-sm:text-lg
 font-bold
 `;
 
 export const Ul = tw.ul`
 text-neutral-500
 font-medium
-sm:text-sm
+text-sm
+md:text-base
 `;
 
 export const Li = tw.li`

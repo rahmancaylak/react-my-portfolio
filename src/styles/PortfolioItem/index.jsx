@@ -1,16 +1,17 @@
 import tw from 'tailwind-styled-components';
 
 export const Container = tw.div`
-overflow-hidden
-z-10
-items-center
-flex
-flex-col
-transition 
-hover:scale-125 
-hover:z-20
+transition
+hover:scale-125
 ease-in-out 
-duration-700 
+duration-700
+border-4
+rounded-lg
+border-gray-600
+dark:border-purple-600
+bg-cover
+bg-no-repeat
+object-cover
 `;
 
 export const Item = tw.div`
@@ -22,9 +23,9 @@ m-auto
 flex 
 flex-col 
 justify-center 
-items-center 
-md:opacity-0 
+items-center
 hover:opacity-100
+md:opacity-0
 `;
 
 export const Title = tw.h3`
@@ -32,7 +33,9 @@ break-words
 w-10/12
 text-center
 text-white
-font-medium
+bg-gray-600
+dark:bg-purple-800
+rounded-lg
 mb-5
 `;
 
@@ -40,4 +43,5 @@ export const Description = tw.p`
 flex
 justiy-center
 items-center
+gap-x-4
 `;

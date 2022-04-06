@@ -1,15 +1,21 @@
 import tw from 'tailwind-styled-components';
 
 export const Button = tw.button`
-${(prop) => (prop.$isActive ? 'bg-purple-800' : 'bg-transparent')}
-text-white
-border-2
-border-purple-800
-px-4
+${(prop) =>
+  prop.$isActive
+    ? 'dark:bg-purple-800 bg-gray-600 text-white'
+    : 'bg-transparent text-gray-600 dark:text-white'}
+mx-1
+px-8
 py-3
-mr-3
-rounded
-hover:bg-purple-800
+rounded-lg
+border-2
+border-gray-600
+hover:text-white
+dark:border-purple-800
+hover:bg-gray-600
+dark:hover:bg-purple-800
+font-semibold
 transition
 duration-500
 `;

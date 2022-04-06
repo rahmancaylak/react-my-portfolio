@@ -7,10 +7,11 @@ import {
   Title,
   Description,
 } from '../../styles/PortfolioItem';
+import { Button } from '../../styles/Modal/Button';
 //Component
 import Modal from '../Modal';
-import { Button } from '../../styles/Button';
-function PortfolioItems({ ...data }) {
+
+export default function PortfolioItems({ ...data }) {
   const [showModal, setShowModal] = useState(false);
   return (
     <>
@@ -22,10 +23,7 @@ function PortfolioItems({ ...data }) {
       >
         <Container
           style={{
-            backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(${data.thumbnail})`,
-            backgroundSize: 'cover',
-            backgroundRepeat: 'no-repeat',
-            objectFit: 'cover',
+            backgroundImage: `url(${data.thumbnail})`,
           }}
         >
           <Item>
@@ -34,14 +32,9 @@ function PortfolioItems({ ...data }) {
             </Title>
             <Description>
               <a href={data.url}>
-                <Button className='p-0 m-0 hover:scale-125'>
-                  {data.urlIcon}
-                </Button>
+                <Button>{data.urlIcon}</Button>
               </a>
-              <Button
-                onClick={() => setShowModal(true)}
-                className='p-0 m-0 hover:scale-125'
-              >
+              <Button onClick={() => setShowModal(true)}>
                 {data.iconDetail}
               </Button>
             </Description>
@@ -52,5 +45,3 @@ function PortfolioItems({ ...data }) {
     </>
   );
 }
-
-export default PortfolioItems;
