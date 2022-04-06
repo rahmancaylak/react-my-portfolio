@@ -1,60 +1,63 @@
-import React from 'react';
+// Data
 import { ProfileData } from '../../data/MyProfile';
 import { SocialMediaData } from '../../data/SocialMedia';
 // Fontawesome Icons
 import { FaAngleDown } from 'react-icons/fa';
 // Tailwind Styled Components
 import {
-  HeroSection,
-  HeroSidebar,
-  HeroContent,
-  Ul,
-  Li,
+  Section,
+  Container,
+  Sidebar,
+  Content,
+  Nav,
+  NavItem,
+  NavLink,
   Img,
   Title,
   SubText,
+  ProjectLink,
+  GithubLink,
   AboutArrow,
 } from '../../styles/Hero';
-function Hero() {
+
+export default function Hero() {
   return (
-    <HeroSection id='home'>
-      <HeroSidebar>
-        <Ul>
-          {SocialMediaData.map((socialMedia) => (
-            <Li key={socialMedia.id}>
-              <a href={socialMedia.url} className={socialMedia.sidebarClass}>
-                {socialMedia.icon}
-              </a>
-            </Li>
-          ))}
-        </Ul>
-      </HeroSidebar>
-      <HeroContent>
-        <Img src={`${ProfileData.image}`} alt={ProfileData.imageAlt}></Img>
-        <Title>
-          Merhaba, ben {`${ProfileData.name} ${ProfileData.surname}`}.
-        </Title>
-        <SubText>
-          HTML, CSS, JavaScript ve React gibi Front-End teknolojilerini
-          öğrenmekteyim. Yaptığım projeleri{' '}
-          <a href='#projects' className='text-white hover:underline'>
-            Projelerim
-          </a>{' '}
-          başlığından inceleyebilir ya da{' '}
-          <a
-            href='https://github.com/rahmancaylak'
-            className='text-white hover:underline'
-          >
-            GitHub
-          </a>{' '}
-          hesabımdan direkt kodlara erişebilirsiniz.
-        </SubText>
-        <AboutArrow href='#projects'>
-          <FaAngleDown className='w-8 h-8' />
-        </AboutArrow>
-      </HeroContent>
-    </HeroSection>
+    <Section id='home'>
+      <Container>
+        <Sidebar>
+          <Nav>
+            {SocialMediaData.map((socialMedia) => (
+              <NavItem key={socialMedia.id}>
+                <NavLink
+                  href={socialMedia.url}
+                  className={socialMedia.sidebarClass}
+                >
+                  {socialMedia.icon}
+                </NavLink>
+              </NavItem>
+            ))}
+          </Nav>
+        </Sidebar>
+        <Content>
+          <Img src={`${ProfileData.image}`} alt={ProfileData.imageAlt}></Img>
+          <Title>
+            Merhaba, ben {`${ProfileData.name} ${ProfileData.surname}`}.
+          </Title>
+          <SubText>
+            HTML, CSS, JavaScript ve React gibi Front-End teknolojilerini
+            öğrenmekteyim. Yaptığım projeleri{' '}
+            <ProjectLink href='#projects'>Projelerim</ProjectLink> başlığından
+            inceleyebilir ya da{' '}
+            <GithubLink href='https://github.com/rahmancaylak'>
+              GitHub
+            </GithubLink>{' '}
+            hesabımdan direkt kodlara erişebilirsiniz.
+          </SubText>
+          <AboutArrow href='#projects'>
+            <FaAngleDown size={26} />
+          </AboutArrow>
+        </Content>
+      </Container>
+    </Section>
   );
 }
-
-export default Hero;

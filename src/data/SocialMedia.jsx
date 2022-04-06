@@ -1,33 +1,32 @@
 // Fontawesome Icons
 import { FaGithub, FaLinkedin, FaTwitter, FaInstagram } from 'react-icons/fa';
-console.log(FaGithub(`className='test'`));
 export const SocialMediaData = [
   {
     id: 1,
     name: 'GitHub',
-    icon: <FaGithub />,
+    icon: <FaGithub size={26} />,
     url: 'https://github.com/rahmancaylak',
-    sidebarClass: 'hover:text-neutral-400',
+    sidebarClass: 'dark:hover:text-neutral-600 hover:text-black',
   },
   {
     id: 2,
     name: 'LinkedIn',
-    icon: <FaLinkedin />,
+    icon: <FaLinkedin size={26} />,
     url: 'https://www.linkedin.com/in/rahman-caylak/',
     sidebarClass: 'hover:text-sky-700',
   },
   {
     id: 3,
     name: 'Twitter',
-    icon: <FaTwitter />,
+    icon: <FaTwitter size={26} />,
     url: 'https://twitter.com/rahmancaylak',
     sidebarClass: 'hover:text-sky-500',
   },
   {
     id: 4,
     name: 'Instagram',
-    icon: <FaInstagram />,
+    icon: <FaInstagram size={26} />,
     url: 'https://instagram.com/rahmancaylak',
-    sidebarClass: 'w-6 h-6 inline hover:text-purple-500',
+    sidebarClass: 'dark:hover:text-purple-500 hover:text-purple-700',
   },
 ];
