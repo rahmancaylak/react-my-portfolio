@@ -1,19 +1,18 @@
-import React from 'react';
 //Tailwind Styled Components
-import { HeaderContainer } from '../../styles/Header/';
+import { Section, Container } from '../../styles/Header/';
 // Header Components
-import Navbar from './Navbar';
+import Menu from './Menu';
 import DarkMode from './DarkMode';
 import Logo from './Logo';
 
-const Header = () => {
+export default function Header() {
   return (
-    <HeaderContainer>
-      <Logo />
-      <Navbar />
-      <DarkMode />
-    </HeaderContainer>
+    <Section>
+      <Container>
+        <Logo />
+        <Menu />
+        <DarkMode />
+      </Container>
+    </Section>
   );
-};
-
-export default Header;
+}

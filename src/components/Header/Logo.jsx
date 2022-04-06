@@ -1,12 +1,10 @@
 import React from 'react';
 //Tailwind Styled Components
-import { LogoContainer, LogoLink } from '../../styles/Header/Logo';
-const Logo = () => {
+import { LogoLink } from '../../styles/Header/Logo';
+export default function Logo() {
   return (
-    <LogoContainer>
+    <>
       <LogoLink href='/'>Rahman Çaylak</LogoLink>
-    </LogoContainer>
+    </>
   );
-};
-
-export default Logo;
+}

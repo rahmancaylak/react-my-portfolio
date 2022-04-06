@@ -2,10 +2,11 @@ import tw from 'tailwind-styled-components';
 
 export const Label = tw.label`
 items-center
+mb-5
+md:mb-0
 `;
 
 export const ToggleContain = tw.div`
-toggleContain
 relative
 flex
 items-center
@@ -19,10 +20,19 @@ block
 w-10
 h-6
 rounded-full
+z-50
 `;
 
 export const ToggleInput = tw.input`
 sr-only
+focus:not-sr-only
+focus:absolute
+focus:w-full
+focus:z-5
+focus:outline
+focus:outline-2
+focus:outline-offset-8
+focus:outline-purple-800
 `;
 
 export const Toggle = tw.div`
@@ -36,4 +46,5 @@ w-4
 h-4
 rounded-full
 transition
+z-50
 `;
