@@ -1,37 +1,39 @@
 import tw from 'tailwind-styled-components';
 
-export const BlogSection = tw.section`
-bg-customPrimary
+export const Section = tw.section`
+bg-rcLightPrimary
+dark:bg-rcPrimary
 h-full
-pb-10
+py-10
 `;
 
-export const BlogContainer = tw.div`
+export const Container = tw.div`
 flex
-justify-center
 flex-col
 items-center
-`;
-
-export const BlogTitle = tw.h2`
-mt-10
-text-3xl
-text-white
-uppercase
-font-medium
-`;
-
-export const BlogText = tw.p`
-mt-6
-text-neutral-500 
-font-medium
-w-4/5
-`;
-export const CardSection = tw.div`
-flex
-flex-wrap
-justify-center
-w-full
+container
 mx-auto
-mt-12
+px-0
+lg:px-5
+xl:px-20
+`;
+
+export const Title = tw.h2`
+text-3xl
+uppercase
+font-semibold
+text-center
+text-gray-600
+dark:text-white
+`;
+
+export const CardSection = tw.div`
+mt-10
+gap-y-4
+grid
+grid-cols-1
+md:grid-cols-2
+md:gap-x-2
+lg:grid-cols-3
+lg:gap-y-0
 `;

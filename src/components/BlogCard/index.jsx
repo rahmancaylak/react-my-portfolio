@@ -1,8 +1,7 @@
 import React from 'react';
 // Tailwind Styled Components
 import {
-  CardContainer,
-  Card,
+  Container,
   BlogLink,
   CardImg,
   CardBody,
@@ -17,7 +16,7 @@ import {
   AuthorTitle,
 } from '../../styles/BlogCard';
 
-const BlogCard = ({
+export default function BlogCard({
   title,
   thumbnail,
   description,
@@ -26,32 +25,28 @@ const BlogCard = ({
   authorName,
   authorImg,
   authorTitle,
-}) => {
+}) {
   return (
-    <CardContainer>
-      <Card>
+    <Container>
+      <BlogLink href='#'>
+        <CardImg src={`${thumbnail}`} />
+      </BlogLink>
+      <CardBody>
+        <Category>
+          {category.join(', ')} — <SubDate>{date}</SubDate>
+        </Category>
         <BlogLink href='#'>
-          <CardImg src={`${thumbnail}`} />
+          <CardTitle>{title}</CardTitle>
         </BlogLink>
-        <CardBody>
-          <Category>
-            {category.join(', ')} — <SubDate>{date}</SubDate>
-          </Category>
-          <BlogLink href='#'>
-            <CardTitle>{title}</CardTitle>
-          </BlogLink>
-          <CardText>{description}</CardText>
-          <CardAuthor>
-            <AuthorImg src={`${authorImg}`} alt={`${authorName}`} />
-            <AuthorDetail>
-              <AuthorName>{authorName}</AuthorName>
-              <AuthorTitle>{authorTitle}</AuthorTitle>
-            </AuthorDetail>
-          </CardAuthor>
-        </CardBody>
-      </Card>
-    </CardContainer>
+        <CardText>{description}</CardText>
+        <CardAuthor>
+          <AuthorImg src={`${authorImg}`} alt={`${authorName}`} />
+          <AuthorDetail>
+            <AuthorName>{authorName}</AuthorName>
+            <AuthorTitle>{authorTitle}</AuthorTitle>
+          </AuthorDetail>
+        </CardAuthor>
+      </CardBody>
+    </Container>
   );
-};
-
-export default BlogCard;
+}
