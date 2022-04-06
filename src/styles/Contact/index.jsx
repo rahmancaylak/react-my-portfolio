@@ -1,39 +1,40 @@
 import tw from 'tailwind-styled-components';
 
-export const ContactSection = tw.section`
-pt-2
-bg-customSecondary
+export const Section = tw.section`
+bg-rcLightSecondary
+dark:bg-rcSecondary
 h-full
+pt-10
 `;
 
-export const ContactContainer = tw.div`
-flex
-justify-center
-flex-col
-items-center
+export const Container = tw.div`
+container
+mx-auto
 `;
 
-export const ContactTitle = tw.h2`
-mt-10
+export const Title = tw.h2`
 text-3xl
-text-white
+text-gray-600
+font-semibold
+dark:text-white
+text-center
 uppercase
-font-medium
 `;
 
 export const Form = tw.form`
 mt-14
 flex
 flex-col
-w-2/3
+mx-10
+lg:mx-40
 `;
 
 export const FormGroup = tw.div`
-grid
-grid-cols-2
+md:grid
+md:grid-cols-2
 gap-4
-sm:flex
-sm:flex-col
+flex
+flex-col
 `;
 
 export const InputGroup = tw.div`
@@ -43,63 +44,68 @@ export const InputGroup = tw.div`
 export const Label = tw.label`
 block
 text-md
-font-medium
-text-slate-300 
+font-semibold
+dark:text-slate-300 
 mb-3
 `;
 
 export const Input = tw.input`
 px-5 
 py-3
-bg-customInputColor
-shadow-sm 
-text-white
-border-slate-300 
-placeholder-neutral-500  
-disabled:bg-slate-50 
-disabled:text-slate-500 
-disabled:border-slate-200 
-focus:outline-none 
-focus:border-purple-800 
-focus:ring-purple-800 
-block 
 w-full	
 rounded-full
-sm:text-sm 
-focus:ring-1 
-invalid:border-pink-500 
-invalid:text-pink-600 
-focus:invalid:border-pink-500 
-focus:invalid:ring-pink-500 
-disabled:shadow-none
+text-sm
+md:text-md
+bg-rcLightInput
+dark:bg-rcInput
+shadow-sm
+dark:text-white
+border-slate-300 
+placeholder-neutral-500
+focus:outline-none 
+focus:ring-2
+focus:border-gray-600
+focus:ring-gray-600
+dark:focus:border-purple-800
+dark:focus:ring-purple-800
+invalid:border-pink-500
+invalid:text-pink-600
+focus:invalid:border-pink-500
+focus:invalid:ring-pink-500
+dark:invalid:border-pink-500
+dark:invalid:text-pink-600
+dark:focus:invalid:border-pink-500
+dark:focus:invalid:ring-pink-500
 transition
 duration-500
 `;
 
 export const TextArea = tw.textarea`
+w-full
+text-sm
+md:text-md
 px-5
 py-5
 rounded-3xl
-bg-customInputColor
+bg-rcLightInput
+dark:bg-rcInput
 shadow-sm 
-text-white
+dark:text-white
 border-slate-300 
-placeholder-neutral-500  
-disabled:bg-slate-50 
-disabled:text-slate-500 
-disabled:border-slate-200 
 focus:outline-none 
-focus:border-purple-800 
-focus:ring-purple-800 
-block 
-w-full	
-sm:text-sm 
-focus:ring-1 
-invalid:border-pink-500 
-invalid:text-pink-600 
-focus:invalid:border-pink-500 
+focus:ring-2
+focus:border-gray-600
+focus:ring-gray-600
+dark:focus:border-purple-800
+dark:focus:ring-purple-800
+invalid:border-pink-500
+invalid:text-pink-600
+focus:invalid:border-pink-500
 focus:invalid:ring-pink-500
-disabled:shadow-none
+dark:invalid:border-pink-500
+dark:invalid:text-pink-600
+dark:focus:invalid:border-pink-500
+dark:focus:invalid:ring-pink-500
 transition
 duration-500
 `;

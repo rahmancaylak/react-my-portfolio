@@ -5,9 +5,9 @@ import { Button } from '../../styles/Button';
 import { FaPaperPlane } from 'react-icons/fa';
 // Tailwind Styled Components
 import {
-  ContactSection,
-  ContactContainer,
-  ContactTitle,
+  Section,
+  Container,
+  Title,
   Form,
   FormGroup,
   InputGroup,
@@ -16,16 +16,17 @@ import {
   TextArea,
   ButtonGroup,
 } from '../../styles/Contact';
-function Contact() {
+
+export default function Contact() {
   const [name, setName] = useState('');
   const [surname, setSurname] = useState('');
   const [email, setEmail] = useState('');
   const [topic, setTopic] = useState('');
   const [message, setMessage] = useState('');
   return (
-    <ContactSection id='contact'>
-      <ContactContainer>
-        <ContactTitle>İletişim</ContactTitle>
+    <Section id='contact'>
+      <Container>
+        <Title>İletişim</Title>
         <Form>
           <FormGroup>
             <InputGroup>
@@ -86,13 +87,11 @@ function Contact() {
               className='flex items-center hover:opacity-80'
               $isActive={true}
             >
-              Send <FaPaperPlane className='ml-1 inline' />
+              Gönder <FaPaperPlane className='ml-1 inline' />
             </Button>
           </ButtonGroup>
         </Form>
-      </ContactContainer>
-    </ContactSection>
+      </Container>
+    </Section>
   );
 }
-
-export default Contact;
