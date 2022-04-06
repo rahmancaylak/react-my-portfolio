@@ -3,8 +3,8 @@ import React from 'react';
 import { FaGithub, FaLinkedin, FaTwitter, FaInstagram } from 'react-icons/fa';
 // Tailwind Styled Components
 import {
-  FooterSection,
-  FooterContainer,
+  Section,
+  Container,
   SocialMediaContainer,
   Ul,
   SocialMedia,
@@ -16,10 +16,11 @@ import {
   Text,
   GithubRepo,
 } from '../../styles/Footer';
-function Footer() {
+
+export default function Footer() {
   return (
-    <FooterSection>
-      <FooterContainer>
+    <Section>
+      <Container>
         <SocialMediaContainer>
           <Ul>
             <SocialMedia>
@@ -66,11 +67,11 @@ function Footer() {
             <GithubRepo href='https://github.com/rahmancaylak/react-my-portfolio'>
               GitHub Repo
             </GithubRepo>
+            <br />
+            Ücretsiz kullanabilirsiniz.
           </Text>
         </CopyrightContainer>
-      </FooterContainer>
-    </FooterSection>
+      </Container>
+    </Section>
   );
 }
-
-export default Footer;
